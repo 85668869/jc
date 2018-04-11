@@ -8,8 +8,46 @@
 	<artifactId>jc</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
+	
+	<properties>
+		<logging.log4j.version>2.8.2</logging.log4j.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<hessian.version>4.0.38</hessian.version>
+		<com.alibaba.fastjson.version>1.2.46</com.alibaba.fastjson.version>
+	</properties>
+	
 	<modules>
 		<module>example</module>
+		<module>jc_util</module>
 	</modules>
+	
+	<dependencies>
+		<!-- hessian协议 -->
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>${hessian.version}</version>
+		</dependency>
+		<!-- json fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${com.alibaba.fastjson.version}</version>
+		</dependency>
+		
+		<!-- apache commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.7</version>
+		</dependency>
+	
+	
+	</dependencies>
+	
 
 </project>
