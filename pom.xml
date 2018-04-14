@@ -23,9 +23,11 @@
 	<modules>
 		<module>example</module>
 		<module>jc_util</module>
+		<module>jc_demo</module>
 	</modules>
 	
 	<dependencies>
+
 		<!-- hessian协议 -->
 		<dependency>
 			<groupId>com.caucho</groupId>
