@@ -1,7 +1,7 @@
 /**
  * Created by jingchun.zhang on 2018/4/12.
  */
-package com.jc.example;
+package com.jc.ds;
 
 import com.alibaba.fastjson.JSONObject;
 
