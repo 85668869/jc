@@ -3,28 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<artifactId>jc</artifactId>
+		<artifactId>example</artifactId>
 		<groupId>com.jc</groupId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	
-	<artifactId>example</artifactId>
-	<packaging>pom</packaging>
-	<modules>
-		<module>ex_1</module>
-		<module>ex_0</module>
-		<module>ex_2</module>
-		<module>ex_3</module>
-		<module>ex_4</module>
-		<module>ex_5</module>
-	</modules>
-	
+	<artifactId>ex_5</artifactId>
+
 	<dependencies>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>5.0.5.RELEASE</version>
-			</dependency>
+		<dependency>
+			<groupId>com.sparkjava</groupId>
+			<artifactId>spark-core</artifactId>
+			<version>2.7.1</version>
+		</dependency>
 	</dependencies>
+
 </project>
