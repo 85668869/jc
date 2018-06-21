@@ -18,6 +18,7 @@
 		<module>ex_3</module>
 		<module>ex_4</module>
 		<module>ex_5</module>
+		<module>ex_6</module>
 	</modules>
 	
 	<dependencies>
