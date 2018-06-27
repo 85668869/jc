@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>springboot-start</module>
+	    <module>mybatis_simple</module>
     </modules>
     
     
