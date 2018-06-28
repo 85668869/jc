@@ -1,7 +1,7 @@
 /**
  * Created by jingchun.zhang on 2018/4/24.
  */
-package com.jc.concurrent;
+package com.jc.concurrent.semaphore;
 
 import java.util.concurrent.Semaphore;
 

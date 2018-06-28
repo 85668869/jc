@@ -1,12 +1,10 @@
 /**
  * Created by jingchun.zhang on 2018/4/24.
  */
-package com.jc.concurrent;
+package com.jc.concurrent.cyclicbarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 /**
  * @author jingchun.zhang

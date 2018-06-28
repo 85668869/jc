@@ -1,7 +1,7 @@
 /**
  * Created by jingchun.zhang on 2018/4/23.
  */
-package com.jc.concurrent;
+package com.jc.concurrent.countdownlatch;
 
 /**
  * @author jingchun.zhang

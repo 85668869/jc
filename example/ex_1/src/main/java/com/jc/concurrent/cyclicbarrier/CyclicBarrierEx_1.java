@@ -1,7 +1,7 @@
 /**
  * Created by jingchun.zhang on 2018/4/24.
  */
-package com.jc.concurrent;
+package com.jc.concurrent.cyclicbarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -34,21 +34,21 @@ public class CyclicBarrierEx_1 {
          java.util.concurrent.BrokenBarrierException
          at java.util.concurrent.CyclicBarrier.dowait(CyclicBarrier.java:250)
          at java.util.concurrent.CyclicBarrier.await(CyclicBarrier.java:435)
-         at com.jc.concurrent.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
+         at com.jc.concurrent.cyclicbarrier.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
          java.util.concurrent.BrokenBarrierException
          at java.util.concurrent.CyclicBarrier.dowait(CyclicBarrier.java:250)
          at java.util.concurrent.CyclicBarrier.await(CyclicBarrier.java:435)
-         at com.jc.concurrent.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
+         at com.jc.concurrent.cyclicbarrier.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
          java.util.concurrent.TimeoutException
          at java.util.concurrent.CyclicBarrier.dowait(CyclicBarrier.java:257)
          at java.util.concurrent.CyclicBarrier.await(CyclicBarrier.java:435)
-         at com.jc.concurrent.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
+         at com.jc.concurrent.cyclicbarrier.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
          线程Thread-3写入数据完毕，等待其他线程写入完毕
          Thread-3所有线程写入完毕，继续处理其他任务...
          java.util.concurrent.BrokenBarrierException
          at java.util.concurrent.CyclicBarrier.dowait(CyclicBarrier.java:207)
          at java.util.concurrent.CyclicBarrier.await(CyclicBarrier.java:435)
-         at com.jc.concurrent.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
+         at com.jc.concurrent.cyclicbarrier.CyclicBarrierEx_1$Writer_1.run(CyclicBarrierEx_1.java:91)
      *</pre>
      *
      */
