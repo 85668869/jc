@@ -4,6 +4,7 @@ package com.jc.mybatis.dao.mapper; /**
 
 
 import com.jc.mybatis.dao.model.Product;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -18,4 +19,7 @@ public interface ProductMapper {
      * @return
      */
     List<Product> selectProductList();
+
+    @Select("select count(1) from product")
+    int count();
 }
