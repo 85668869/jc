@@ -24,7 +24,8 @@
 		<module>example</module>
 		<module>jc_util</module>
 		<module>jc_demo</module>
-	</modules>
+        <module>concurrency</module>
+    </modules>
 	
 	<dependencies>
 
@@ -53,7 +54,20 @@
 			<artifactId>guava</artifactId>
 			<version>24.1-jre</version>
 		</dependency>
-	
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
 	</dependencies>
 	
 
