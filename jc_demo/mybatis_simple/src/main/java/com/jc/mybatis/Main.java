@@ -38,6 +38,20 @@ public class Main {
     public static void main(String[] args) throws IOException {
         try {
             ProductMapper productMapper = sqlSession.getMapper(ProductMapper.class);
+
+            int i = 1;
+            Product product1 = new Product();
+            product1.setId(i);
+            product1.setProductName("name"+i);
+            product1.setProductContent("content"+i);
+            product1.setPrice("15"+i);
+            product1.setSort(i);
+            product1.setFalseSales(i);
+            product1.setCategory_id(i);
+            int a = productMapper.insert(product1);
+            System.out.println("..." + a);
+
+//            if (true)return;
             int count = productMapper.count();
             System.out.println("count:"+count);
             List<Product> productList = productMapper.selectProductList();

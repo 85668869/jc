@@ -1,4 +1,4 @@
-package com.zh;
+package com.jc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -5,4 +5,43 @@
 	<select id="selectProductList" resultType="com.jc.mybatis.dao.model.Product">
 		select * from product
 	</select>
+
+	<insert id="insert" parameterType="com.jc.mybatis.dao.model.Product">
+			INSERT INTO `product`
+            (`id`,
+             `product_name`,
+             `product_content`,
+             `price`,
+             `sort`,
+             `falseSales`,
+             `category_id`)
+			VALUES (
+							#{id},
+							#{productName},
+							#{productContent},
+							#{price},
+							#{sort},
+							#{falseSales},
+							#{category_id})
+	</insert>
+	<insert id="batchInsert">
+		INSERT INTO `product`
+            (`id`,
+             `product_name`,
+             `product_content`,
+             `price`,
+             `sort`,
+             `falseSales`,
+             `category_id`)
+			VALUES
+			<foreach collection="products" item="item" separator=",">
+				(#{item.id},
+				#{item.productName},
+				#{item.productContent},
+				#{item.price},
+				#{item.sort},
+				#{item.falseSales},
+				#{item.category_id})
+			</foreach>
+	</insert>
 </mapper>
