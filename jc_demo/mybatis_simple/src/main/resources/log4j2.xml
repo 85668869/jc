@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="debug" packages="com.wwwarehouse.commons.utils.log4j">
+    <appenders>
+        <!-- 定义控制台输出 -->
+        <CONSOLE name="CONSOLE" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss,SSS}] %p %sid [%t] %l - %m%n"/>
+        </CONSOLE>
+    </appenders>
+    <loggers>
+        <logger name="java.sql" level="warn" additivity="false">
+            <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="DAILY-ROLL-FILE"/>
+        </logger>
+        <logger name="org.apache.ibatis" level="debug" additivity="false">
+            <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="DAILY-ROLL-FILE"/>
+        </logger>
+        <!-- Root Logger -->
+        <root level="debug">
+            <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="DAILY-ROLL-FILE"/>
+        </root>
+    </loggers>
+</configuration>  

@@ -19,8 +19,7 @@ public class Product {
     private int sort;
     private int falseSales;
     private long category_id;
-    private byte type;
-    private byte state;
+
 
     public long getId() {
         return id;
@@ -76,22 +75,6 @@ public class Product {
 
     public void setCategory_id(long category_id) {
         this.category_id = category_id;
-    }
-
-    public byte getType() {
-        return type;
-    }
-
-    public void setType(byte type) {
-        this.type = type;
-    }
-
-    public byte getState() {
-        return state;
-    }
-
-    public void setState(byte state) {
-        this.state = state;
     }
 
     @Override
