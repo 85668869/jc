@@ -25,7 +25,8 @@
 		<module>jc_util</module>
 		<module>jc_demo</module>
         <module>concurrency</module>
-    </modules>
+    <module>jc_elasticsearch</module>
+  </modules>
 	
 	<dependencies>
 
