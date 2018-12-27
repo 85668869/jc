@@ -1,10 +1,10 @@
 /**
  * Created by jingchun.zhang on 2018/12/27.
  */
-package com.jc.es.model;
+package com.jc.es.dao;
 
 
-import com.jc.es.dao.Book;
+import com.jc.es.model.Book;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**

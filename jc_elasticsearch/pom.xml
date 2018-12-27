@@ -13,6 +13,9 @@
   <packaging>pom</packaging>
   <modules>
     <module>es_test</module>
+      <module>es_java_rest</module>
+    <module>es_springboot</module>
+    <module>es_repository</module>
   </modules>
 
   <properties>

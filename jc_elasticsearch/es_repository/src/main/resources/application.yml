@@ -1,0 +1,10 @@
+##端口号
+server:
+  port: 8888
+
+##es地址
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9200
+      cluster-name: my-application

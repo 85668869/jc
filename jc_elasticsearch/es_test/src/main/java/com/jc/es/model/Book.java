@@ -1,7 +1,7 @@
 /**
  * Created by jingchun.zhang on 2018/12/27.
  */
-package com.jc.es.dao;
+package com.jc.es.model;
 
 import lombok.Getter;
 import lombok.Setter;
