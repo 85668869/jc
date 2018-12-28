@@ -3,6 +3,7 @@ package com.jc.es.config;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpHost;
+import org.elasticsearch.client.Client;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestClientBuilder;
 import org.elasticsearch.client.RestHighLevelClient;
@@ -34,12 +35,25 @@ public class EsRestClient {
                 .filter(Objects::nonNull)
                 .toArray(HttpHost[]::new);
         log.debug("host:{}",  Arrays.toString(hosts));
+        RestClientBuilder restClientBuilder = RestClient.builder(hosts);
+        //配置链接时间延迟
+        restClientBuilder.setRequestConfigCallback(builder->{
+            builder.setConnectTimeout(1000);
+            builder.setSocketTimeout(30000);
+            builder.setConnectionRequestTimeout(500);
+            return builder;
+        });
+        restClientBuilder.setMaxRetryTimeoutMillis(60000);
         return RestClient.builder(hosts);
     }
 
     @Bean
+    public RestClient restClient(@Autowired RestClientBuilder restClientBuilder){
+        return restClientBuilder.build();
+    }
+
+    @Bean
     public RestHighLevelClient restHighLevelClient(@Autowired RestClientBuilder restClientBuilder){
-        restClientBuilder.setMaxRetryTimeoutMillis(60000);
         return new RestHighLevelClient(restClientBuilder);
     }
 

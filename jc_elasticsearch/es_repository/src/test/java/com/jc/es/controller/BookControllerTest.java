@@ -5,11 +5,14 @@ import com.jc.es.model.Book;
 import java.util.Random;
 import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.reindex.BulkByScrollResponse;
 import org.elasticsearch.index.reindex.DeleteByQueryAction;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
@@ -30,7 +33,6 @@ public class BookControllerTest {
 
     @Test
     public void save() throws Exception {
-
         Book book = new Book();
         book.setId("T" + System.currentTimeMillis());
         book.setName("书" + System.currentTimeMillis());
@@ -46,7 +48,7 @@ public class BookControllerTest {
 
     @Test
     public void test() throws Exception {
-
+        QueryBuilder qb = QueryBuilders.rangeQuery("type");
 
     }
 }
