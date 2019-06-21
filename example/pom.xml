@@ -21,7 +21,8 @@
 		<module>ex_6</module>
         <module>ex_7</module>
 		<module>ex_8</module>
-	</modules>
+    <module>ex_9</module>
+  </modules>
 	
 	<dependencies>
 		<dependency>
